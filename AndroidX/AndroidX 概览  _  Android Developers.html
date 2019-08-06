@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://developer.android.com/jetpack/androidx -->
+<html lang="zh-CN" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+          
+<title>AndroidX 概览 &nbsp;|&nbsp; Android Developers</title>
+
+<meta property="og:title" content="AndroidX 概览  |  Android Developers">
+
+  <meta property="og:url" content="https://developer.android.com/jetpack/androidx">
+
+  <meta property="og:image" content="/images/android-developers.png">
+  <meta property="og:image:secure_url" content="/images/android-developers.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="zh_cn">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+
+
+    
+    
+    
+  
+        <meta property="og:site_name" content="Android Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#78c257">
+    
+    
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="https://developer.android.com/_pwa/android/manifest.json" crossorigin="use-credentials">
+    <link rel="preconnect" href="https://www.gstatic.com/" crossorigin="">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
+    <link rel="stylesheet" href="./AndroidX 概览  _  Android Developers_files/css">
+        <link rel="stylesheet" href="./AndroidX 概览  _  Android Developers_files/app.css">
+    <noscript>
+      <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/va3a0eb1ff00a004a87e2f93101f27917d794beecfd23556fc6d8627bba2ff3cf/android/css/ce_bundle.css">
+    </noscript><link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/va3a0eb1ff00a004a87e2f93101f27917d794beecfd23556fc6d8627bba2ff3cf/android/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/va3a0eb1ff00a004a87e2f93101f27917d794beecfd23556fc6d8627bba2ff3cf/android/images/touchicon-180.png"><link rel="canonical" href="https://developer.android.com/jetpack/androidx"><link rel="search" type="application/opensearchdescription+xml" href="https://developer.android.com/s/opensearch.xml" data-title="Android Developers"><script type="text/javascript" async="" src="./AndroidX 概览  _  Android Developers_files/linkid.js.下载"></script><script async="" src="./AndroidX 概览  _  Android Developers_files/gtm.js.下载"></script><script src="./AndroidX 概览  _  Android Developers_files/webcomponents-lite.js.下载"></script><script src="./AndroidX 概览  _  Android Developers_files/devsite_app__zh_cn.js.下载"></script><script src="./AndroidX 概览  _  Android Developers_files/analytics.js.下载"></script><script src="./AndroidX 概览  _  Android Developers_files/devsite_heading_module__zh_cn.js.下载"></script><link rel="stylesheet" type="text/css" href="./AndroidX 概览  _  Android Developers_files/devsite_heading.css"><script src="./AndroidX 概览  _  Android Developers_files/devsite_page_rating_module__zh_cn.js.下载"></script><link rel="stylesheet" type="text/css" href="./AndroidX 概览  _  Android Developers_files/devsite_page_rating.css"><script src="./AndroidX 概览  _  Android Developers_files/devsite_snackbar_module__zh_cn.js.下载"></script><link rel="stylesheet" type="text/css" href="./AndroidX 概览  _  Android Developers_files/devsite_snackbar.css"><script src="./AndroidX 概览  _  Android Developers_files/devsite_tooltip_module__zh_cn.js.下载"></script><link rel="stylesheet" type="text/css" href="./AndroidX 概览  _  Android Developers_files/devsite_tooltip.css"><link rel="stylesheet" type="text/css" href="./AndroidX 概览  _  Android Developers_files/devsite_content_footer.css"><style type="text/css"></style></head>
+  <body type="article" theme="android-theme" class="" layout="docs" ready="">
+    <devsite-progress id="app-progress"></devsite-progress>
+    <div class="devsite-wrapper"><devsite-header top-row--height="48" bottom-row--height="104" bottom-tabs--height="48" fixed="" offset="0" style="opacity: 1;">
+      
+
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu" class="devsite-header-icon-button button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Navigation menu button" aria-label="Close menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+  <a href="https://developer.android.com/" class="devsite-site-logo-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Site logo">
+  <img src="./AndroidX 概览  _  Android Developers_files/lockup.svg" class="devsite-site-logo" alt="Android Developers">
+</a>
+            <span class="devsite-product-name">
+            <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                              </li>
+  </ul>
+          </span>
+        
+</div>        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                          <devsite-tabs class="upper-tabs" connected="">
+  
+<div class="devsite-tabs-wrapper">
+                  <tab>
+          <a href="https://developer.android.com/about" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Platform">
+  Platform
+</a>
+
+        </tab>
+                        <tab>
+          <a href="https://developer.android.com/studio" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Android Studio">
+  Android Studio
+</a>
+
+        </tab>
+                        <tab>
+          <a href="https://developer.android.com/distribute" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Google Play">
+  Google Play
+</a>
+
+        </tab>
+                        <tab active="">
+          <a href="https://developer.android.com/jetpack" class="gc-analytics-event" aria-label="Jetpack, selected" data-category="Site-Wide Custom Events" data-label="Tab: Jetpack">
+  Jetpack
+</a>
+
+        </tab>
+                        <tab>
+          <a href="https://developer.android.com/kotlin" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Kotlin">
+  Kotlin
+</a>
+
+        </tab>
+                        <tab>
+          <a href="https://developer.android.com/docs" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Docs">
+  Docs
+</a>
+
+        </tab>
+                        <tab>
+          <a href="https://developer.android.com/news" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: News">
+  News
+</a>
+
+        </tab>
+            <tab overflow-tab="" hidden=""><a href="https://developer.android.com/jetpack/androidx#" class="devsite-icon devsite-icon-arrow-drop-down">更多</a><div class="devsite-tabs-overflow-menu" scrollbars="" hidden=""></div></tab></div></devsite-tabs>
+
+                       </div>
+          <devsite-search enable-search="" enable-signin="" enable-suggestions="" enable-query-completion="" project-path="">
+  <form class="devsite-search-form" action="https://developer.android.com/s/results/" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="搜索" type="text" class="devsite-search-field devsite-search-query" name="q" value="" autocomplete="off" aria-label="搜索框">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button" search-open="" class="devsite-search-button devsite-header-icon-button button-flat material-icons" aria-label="Open search box"></button>
+    </div>
+  <div class="devsite-popout"><div class="devsite-popout-result devsite-suggest-results-container" devsite-hide="" role="menu" aria-haspopup="true"></div><div class="devsite-popout-result devsite-history-container" devsite-hide="" role="menu" aria-haspopup="true"></div></div></form>
+  <button type="button" search-close="" class="devsite-search-button devsite-header-icon-button button-flat material-icons" aria-label="Close search box"></button>
+</devsite-search>
+
+        <devsite-search-background style="opacity: 1;"></devsite-search-background></div>
+
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select" name="language" track-name="click" track-type="languageSelector">
+                <option>Language</option>
+              <option value="id" track-metadata-original-language="zh_cn" track-metadata-selected-language="id" track-name="changed" track-type="languageSelector">
+        Bahasa Indonesia
+      </option>
+          <option value="de" track-metadata-original-language="zh_cn" track-metadata-selected-language="de" track-name="changed" track-type="languageSelector">
+        Deutsch
+      </option>
+          <option value="en" track-metadata-original-language="zh_cn" track-metadata-selected-language="en" track-name="changed" track-type="languageSelector">
+        English
+      </option>
+          <option value="es" track-metadata-original-language="zh_cn" track-metadata-selected-language="es" track-name="changed" track-type="languageSelector">
+        Español
+      </option>
+          <option value="es_419" track-metadata-original-language="zh_cn" track-metadata-selected-language="es_419" track-name="changed" track-type="languageSelector">
+        Español – América Latina
+      </option>
+          <option value="fr" track-metadata-original-language="zh_cn" track-metadata-selected-language="fr" track-name="changed" track-type="languageSelector">
+        Français
+      </option>
+          <option value="pt_br" track-metadata-original-language="zh_cn" track-metadata-selected-language="pt_br" track-name="changed" track-type="languageSelector">
+        Português – Brasil
+      </option>
+          <option value="vi" track-metadata-original-language="zh_cn" track-metadata-selected-language="vi" track-name="changed" track-type="languageSelector">
+        Tiếng Việt
+      </option>
+          <option value="tr" track-metadata-original-language="zh_cn" track-metadata-selected-language="tr" track-name="changed" track-type="languageSelector">
+        Türkçe
+      </option>
+          <option value="ru" track-metadata-original-language="zh_cn" track-metadata-selected-language="ru" track-name="changed" track-type="languageSelector">
+        Русский
+      </option>
+          <option value="th" track-metadata-original-language="zh_cn" track-metadata-selected-language="th" track-name="changed" track-type="languageSelector">
+        ภาษาไทย
+      </option>
+          <option value="zh_cn" track-metadata-original-language="zh_cn" track-metadata-selected-language="zh_cn" track-name="changed" track-type="languageSelector">
+        中文 – 简体
+      </option>
+          <option value="zh_tw" track-metadata-original-language="zh_cn" track-metadata-selected-language="zh_tw" track-name="changed" track-type="languageSelector">
+        中文 – 繁體
+      </option>
+          <option value="ja" track-metadata-original-language="zh_cn" track-metadata-selected-language="ja" track-name="changed" track-type="languageSelector">
+        日本語
+      </option>
+          <option value="ko" track-metadata-original-language="zh_cn" track-metadata-selected-language="ko" track-name="changed" track-type="languageSelector">
+        한국어
+      </option>
+        </select>
+  <div class="devsite-select"><button class="devsite-select-toggle">Language</button><ul class="devsite-select-list" scrollbars=""><li class="devsite-select-item" data-index="0">Language</li><li class="devsite-select-item" data-index="1">Bahasa Indonesia</li><li class="devsite-select-item" data-index="2">Deutsch</li><li class="devsite-select-item" data-index="3">English</li><li class="devsite-select-item" data-index="4">Español</li><li class="devsite-select-item" data-index="5">Español – América Latina</li><li class="devsite-select-item" data-index="6">Français</li><li class="devsite-select-item" data-index="7">Português – Brasil</li><li class="devsite-select-item" data-index="8">Tiếng Việt</li><li class="devsite-select-item" data-index="9">Türkçe</li><li class="devsite-select-item" data-index="10">Русский</li><li class="devsite-select-item" data-index="11">ภาษาไทย</li><li class="devsite-select-item" data-index="12">中文 – 简体</li><li class="devsite-select-item" data-index="13">中文 – 繁體</li><li class="devsite-select-item" data-index="14">日本語</li><li class="devsite-select-item" data-index="15">한국어</li></ul></div></devsite-select>
+</devsite-language-selector>
+
+
+        
+                  <devsite-user sign-in-url="https://developer.android.com/_d/signin?continue=https%3A%2F%2Fdeveloper.android.com%2Fjetpack%2Fandroidx" sign-out-url="https://developer.android.com/_d/signout?continue=https%3A%2F%2Fdeveloper.android.com%2Fjetpack%2Fandroidx" url="https://developer.android.com/_d/signout?continue=https%3A%2F%2Fdeveloper.android.com%2Fjetpack%2Fandroidx"><div class="ogb-wrapper ogb-si"><a href="https://developer.android.com/_d/signin?continue=https%3A%2F%2Fdeveloper.android.com%2Fjetpack%2Fandroidx" class="devsite-user-signin button devsite-top-button">
+  Sign in
+</a></div></devsite-user>
+              </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+    " style="transform: translate3d(0px, 0px, 0px);">
+    <div class="devsite-header-background">
+                        <div class="devsite-product-id-row">
+            <div class="devsite-product-description-row">
+                              <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="https://developer.android.com/jetpack" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Lower Header" data-value="1">
+            Jetpack
+      
+  </a>
+        </li>
+  </ul>
+                                        </div>
+                                                                                    </div>
+                                      <div class="devsite-doc-set-nav-row">
+                              <devsite-tabs class="lower-tabs" connected="">
+  
+<div class="devsite-tabs-wrapper">
+                  <tab>
+          <a href="https://developer.android.com/jetpack" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: 概览">
+  概览
+</a>
+
+        </tab>
+                        <tab>
+          <a href="https://developer.android.com/jetpack/docs/getting-started" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Get Started">
+  Get Started
+</a>
+
+        </tab>
+                        <tab active="">
+          <a href="https://developer.android.com/jetpack/androidx" class="gc-analytics-event" aria-label="AndroidX, selected" data-category="Site-Wide Custom Events" data-label="Tab: AndroidX">
+  AndroidX
+</a>
+
+        </tab>
+                        <tab>
+          <a href="https://developer.android.com/jetpack/docs/feedback" class="gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Tab: Community">
+  Community
+</a>
+
+        </tab>
+            <tab overflow-tab="" hidden=""><a href="https://developer.android.com/jetpack/androidx#" class="devsite-icon devsite-icon-arrow-drop-down">更多</a><div class="devsite-tabs-overflow-menu" scrollbars="" hidden=""></div></tab></div></devsite-tabs>
+
+        </div>
+          </div>  </div></div>
+  
+
+  </devsite-header>      <div class="devsite-book-nav-bg" hidden="" fixed=""></div><devsite-book-nav scrollbars="" hidden="" top-level-nav="" animatable="" fixed="" style="top: 152px; max-height: 719px; transform: translate3d(0px, 0px, 0px);">
+                  
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button" id="devsite-close-nav" class="devsite-header-icon-button button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Close navigation" aria-label="Close navigation">
+    </button>
+  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+                                <a href="https://developer.android.com/about" class="devsite-nav-title gc-analytics-event
+            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Platform"><span>
+      </span><span class="devsite-nav-text"><span>Platform</span></span><span>
+        </span></a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                                <a href="https://developer.android.com/studio" class="devsite-nav-title gc-analytics-event
+            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Android Studio"><span>
+      </span><span class="devsite-nav-text"><span>Android Studio</span></span><span>
+        </span></a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                                <a href="https://developer.android.com/distribute" class="devsite-nav-title gc-analytics-event
+            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Google Play"><span>
+      </span><span class="devsite-nav-text"><span>Google Play</span></span><span>
+        </span></a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                                <a href="https://developer.android.com/jetpack" class="devsite-nav-title gc-analytics-event
+            devsite-nav-active" data-category="Site-Wide Custom Events" data-label="Responsive Tab: Jetpack"><span>
+      </span><span class="devsite-nav-text"><span>Jetpack</span></span><span>
+        </span></a>
+  
+                                            <ul class="devsite-nav-responsive-tabs">
+                                                                                                                      <li class="devsite-nav-item">
+    <a href="https://developer.android.com/jetpack" class="devsite-nav-title gc-analytics-event
+            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: 概览"><span>
+      </span><span class="devsite-nav-text"><span>概览</span></span><span>
+        </span></a>
+  </li>
+
+                                                                                                                      <li class="devsite-nav-item">
+    <a href="https://developer.android.com/jetpack/docs/getting-started" class="devsite-nav-title gc-analytics-event
+            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Get Started"><span>
+      </span><span class="devsite-nav-text"><span>Get Started</span></span><span>
+        </span></a>
+  </li>
+
+                                                                                                                      <li class="devsite-nav-item">
+    <a href="https://developer.android.com/jetpack/androidx" class="devsite-nav-title gc-analytics-event
+            devsite-nav-active" data-category="Site-Wide Custom Events" data-label="Responsive Tab: AndroidX"><span>
+      </span><span class="devsite-nav-text"><span>AndroidX</span></span><span>
+        </span></a>
+  </li>
+
+                                                                                                                      <li class="devsite-nav-item">
+    <a href="https://developer.android.com/jetpack/docs/feedback" class="devsite-nav-title gc-analytics-event
+            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Community"><span>
+      </span><span class="devsite-nav-text"><span>Community</span></span><span>
+        </span></a>
+  </li>
+
+                                  </ul>
+                          </li>
+                      <li class="devsite-nav-item">
+                                <a href="https://developer.android.com/kotlin" class="devsite-nav-title gc-analytics-event
+            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Kotlin"><span>
+      </span><span class="devsite-nav-text"><span>Kotlin</span></span><span>
+        </span></a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                                <a href="https://developer.android.com/docs" class="devsite-nav-title gc-analytics-event
+            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: Docs"><span>
+      </span><span class="devsite-nav-text"><span>Docs</span></span><span>
+        </span></a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                                <a href="https://developer.android.com/news" class="devsite-nav-title gc-analytics-event
+            " data-category="Site-Wide Custom Events" data-label="Responsive Tab: News"><span>
+      </span><span class="devsite-nav-text"><span>News</span></span><span>
+        </span></a>
+  
+                                        </li>
+                            </ul>
+          </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <div id="gc-wrapper" style="margin-top: 152px;">
+        <div class="devsite-main-content" has-toc="">
+          <devsite-toc class="devsite-nav devsite-toc" fixed="" max-height="671" offset="0" visible=""><ul class="devsite-nav-list" scrollbars="" style="max-height: 671px; transform: translate3d(0px, 0px, 0px); max-width: 435px;"><li class="devsite-nav-item devsite-nav-heading devsite-toc-toggle"><a href="https://developer.android.com/jetpack/androidx#top_of_page" class="devsite-nav-title"><span class="devsite-nav-text">目录</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/jetpack/androidx#using_androidx" class="devsite-nav-title"><span class="devsite-nav-text">使用 AndroidX</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/jetpack/androidx#androidx_reference" class="devsite-nav-title"><span class="devsite-nav-text">AndroidX 参考文档</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/jetpack/androidx#additional_resources" class="devsite-nav-title"><span class="devsite-nav-text">其他资源</span></a></li></ul></devsite-toc>
+          <devsite-content>
+                          
+
+<article class="devsite-article">
+  <article class="devsite-article-inner">          <div class="devsite-banner devsite-banner-announcement">
+        <div class="devsite-banner-message">
+          Register now for <a href="https://developer.android.com/dev-summit"> Android Dev Summit 2019!</a>
+        </div>
+      </div>
+        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="https://developer.android.com/" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="1">
+            Android Developers
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="https://developer.android.com/jetpack" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="2">
+            Jetpack
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="https://developer.android.com/jetpack/androidx" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="3">
+            AndroidX
+      
+  </a>
+        </li>
+  </ul>
+               <devsite-page-rating position="header" selected-rating="0" hover-rating-star="0">
+         <div><div class="devsite-rating-stars"><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="1" role="button" data-title="文档根本没法用" aria-label="Site content star ratings, rating 1 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="2" role="button" data-title="文档水平很差" aria-label="Site content star ratings, rating 2 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="3" role="button" data-title="文档水平一般" aria-label="Site content star ratings, rating 3 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="4" role="button" data-title="文档不错" aria-label="Site content star ratings, rating 4 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="5" role="button" data-title="文档写得很好" aria-label="Site content star ratings, rating 5 out of 5"></div></div><div class="devsite-rating-internal"><span class="devsite-rating-stats"></span></div></div></devsite-page-rating>
+          </div>
+
+              <devsite-heading text="AndroidX 概览" for="androidx-%E6%A6%82%E8%A7%88" level="h1" class="devsite-page-title"><h1 class="" is-upgraded="" id="androidx-%E6%A6%82%E8%A7%88">AndroidX 概览</h1></devsite-heading>
+    
+    <devsite-toc class="devsite-nav devsite-toc-embedded" devsite-toc-embedded="" visible=""><ul class="devsite-nav-list" scrollbars=""><li class="devsite-nav-item devsite-nav-heading devsite-toc-toggle"><a href="https://developer.android.com/jetpack/androidx#top_of_page" class="devsite-nav-title"><span class="devsite-nav-text">目录</span></a><button type="button" class="devsite-nav-show-all button-transparent material-icons" data-title="展开/收起内容"></button></li><li class="devsite-nav-item"><a href="https://developer.android.com/jetpack/androidx#using_androidx" class="devsite-nav-title"><span class="devsite-nav-text">使用 AndroidX</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/jetpack/androidx#androidx_reference" class="devsite-nav-title"><span class="devsite-nav-text">AndroidX 参考文档</span></a></li><li class="devsite-nav-item"><a href="https://developer.android.com/jetpack/androidx#additional_resources" class="devsite-nav-title"><span class="devsite-nav-text">其他资源</span></a></li><li class="devsite-toc-toggle"><button type="button" class="button-flat devsite-nav-more-items material-icons" aria-hidden="true" data-title="展开/收起内容"></button></li></ul></devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      ">
+
+              
+
+    <p>AndroidX 是 Android 团队用于在 <a href="https://developer.android.com/jetpack">Jetpack</a> 中开发、测试、打包和发布库以及对其进行版本控制的开源项目。</p>
+
+    <p>AndroidX 对原始 Android <a href="https://developer.android.com/topic/libraries/support-library/index">支持库</a>进行了重大改进。与支持库一样，AndroidX 与 Android 操作系统分开提供，并与各个 Android 版本向后兼容。AndroidX 完全取代了支持库，不仅提供同等的功能，而且提供了新的库。此外，AndroidX 还包括以下功能：</p>
+
+    <ul>
+    <li><p>AndroidX 中的所有软件包都使用一致的命名空间，以字符串 <code>androidx</code> 开头。支持库软件包已映射到对应的 <code>androidx.*</code> 软件包。有关所有旧类到新类以及旧编译工件到新编译工件的完整映射，请参阅<a href="https://developer.android.com/jetpack/androidx/refactor">软件包重构</a>页面。</p></li>
+    <li><p>与支持库不同，AndroidX 软件包会单独维护和更新。<code>androidx</code> 软件包使用严格的<a href="https://semver.org/" class="external">语义版本控制</a>，从版本 1.0.0 开始。您可以单独更新项目中的 AndroidX 库。</p></li>
+    <li><p>所有新支持库的开发工作都将在 AndroidX 库中进行。这包括维护原始支持库工件和引入新的 Jetpack 组件。</p></li>
+    </ul>
+
+    <devsite-heading text="使用 AndroidX" for="using_androidx" level="h2" link="" toc="" class="" back-to-top=""><h2 id="using_androidx" is-upgraded="">使用 AndroidX<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button><a href="https://developer.android.com/jetpack/androidx#top_of_page" class="devsite-back-to-top-link material-icons" data-title="返回页首"></a></h2></devsite-heading>
+
+    <p>如需了解如何迁移现有项目，请参阅<a href="https://developer.android.com/jetpack/androidx/migrate">迁移到 AndroidX</a>。</p>
+
+    <p>如果要在新项目中使用 AndroidX，则需要将编译 SDK 设置为 Android 9.0（API 级别 28）或更高版本，并在 <a href="https://developer.android.com/studio/build/#properties-files"><code>gradle.properties</code> 文件</a>中将以下两个 Android Gradle 插件标记设置为 <code>true</code>。</p>
+
+    <ul>
+    <li><code>android.useAndroidX</code>：如果设置为 <code>true</code>，Android 插件会使用相应的 AndroidX 库，而非支持库。如果未指定，则该标记默认为 <code>false</code>。</li>
+    <li><code>android.enableJetifier</code>：如果设置为 <code>true</code>，Android 插件会重写其二进制文件，自动迁移现有的第三方库以使用 AndroidX。如果未指定，则该标记默认为 <code>false</code>。</li>
+    </ul>
+
+    <devsite-heading text="AndroidX 参考文档" for="androidx_reference" level="h2" link="" toc="" class="" back-to-top=""><h2 id="androidx_reference" is-upgraded="">AndroidX 参考文档<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button><a href="https://developer.android.com/jetpack/androidx#top_of_page" class="devsite-back-to-top-link material-icons" data-title="返回页首"></a></h2></devsite-heading>
+
+    <p>有关 AndroidX 中的所有软件包和类，请参阅 <a href="https://developer.android.com/reference/androidx/packages">AndroidX 参考文档部分</a>。</p>
+
+    <devsite-heading text="其他资源" for="additional_resources" level="h2" link="" toc="" class="" back-to-top=""><h2 id="additional_resources" is-upgraded="">其他资源<button role="button" class="devsite-heading-link button-flat material-icons" data-title="Copy link to this section"></button><a href="https://developer.android.com/jetpack/androidx#top_of_page" class="devsite-back-to-top-link material-icons" data-title="返回页首"></a></h2></devsite-heading>
+
+    <p>Jetpack 组件是 AndroidX 库的一部分。如需详细了解相关组件，请参阅 Jetpack <a href="https://developer.android.com/jetpack">首页</a>。</p>
+
+    <p>如需详细了解从支持库到 AndroidX 的软件包重构，请<a href="https://android-developers.googleblog.com/2018/05/hello-world-androidx.html">阅读这篇博文</a>。</p>
+
+
+          </div>
+
+    
+                   <devsite-page-rating position="footer" selected-rating="0" hover-rating-star="0">
+         <div><div class="devsite-rating-caption">Was this page helpful?</div><div class="devsite-rating-stars"><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="1" role="button" data-title="文档根本没法用" aria-label="Site content star ratings, rating 1 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="2" role="button" data-title="文档水平很差" aria-label="Site content star ratings, rating 2 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="3" role="button" data-title="文档水平一般" aria-label="Site content star ratings, rating 3 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="4" role="button" data-title="文档不错" aria-label="Site content star ratings, rating 4 out of 5"></div><div class="devsite-rating-star devsite-rating-star-outline gc-analytics-event material-icons" data-rating-val="5" role="button" data-title="文档写得很好" aria-label="Site content star ratings, rating 5 out of 5"></div></div><div class="devsite-rating-internal"><span class="devsite-rating-stats"></span></div></div></devsite-page-rating>
+                   
+          </article>
+</article>
+
+<devsite-content-footer class="nocontent">
+  <p>Content and code samples on this page are subject to the licenses described in the <a href="https://developer.android.com/license">Content License</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>
+</devsite-content-footer>
+
+
+                      </devsite-content>
+        </div>
+        <devsite-footer-promos class="devsite-footer">
+                      <nav>
+  <ul class="devsite-footer-promos-list">
+        <li class="devsite-footer-promo">
+      <a href="https://twitter.com/AndroidDev" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Twitter Promo">
+                        <img class="devsite-footer-promo-icon" src="./AndroidX 概览  _  Android Developers_files/logo-twitter.svg" alt="Twitter">
+                Twitter
+      </a>
+      <div class="devsite-footer-promo-description">在 Twitter 上关注 @AndroidDev</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="https://www.youtube.com/user/androiddevelopers" class="devsite-footer-promo-title gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer YouTube Promo">
+                        <img class="devsite-footer-promo-icon" src="./AndroidX 概览  _  Android Developers_files/youtube_48dp.png" alt="YouTube">
+                YouTube
+      </a>
+      <div class="devsite-footer-promo-description">在 YouTube 上访问“Android Developers”频道</div>
+    </li>
+      </ul>
+</nav>
+
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+  <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">关于 Android</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://www.android.com/" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)">
+            Android
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://www.android.com/enterprise/" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)">
+            Enterprise
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://www.android.com/security-center/" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)">
+            安全
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://source.android.com/" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)">
+            源代码
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">支持</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://issuetracker.google.com/issues/new?component=190923&amp;template=841312" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)">
+            报告平台错误
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://issuetracker.google.com/issues/new?component=192697" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)">
+            报告文档错误
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://support.google.com/googleplay/android-developer" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)">
+            Google Play support
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://google.qualtrics.com/jfe/form/SV_ewWXIoEVLBcyp7f??reserved=1&amp;utm_source=FooterLink&amp;Q_Language=en&amp;utm_medium=own_srch&amp;utm_campaign=developer.android.com&amp;utm_term=0&amp;utm_content=0&amp;productTag=reg&amp;campaignDate=may19&amp;pType=devel&amp;referral_code=gV420370" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)">
+            参加调查研究
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">文档</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://developer.android.com/guide" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)">
+            开发者指南
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://developer.android.com/design" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)">
+            设计指南
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://developer.android.com/reference" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)">
+            API 参考
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://developer.android.com/samples" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)">
+            示例
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://developer.android.com/studio/intro" class="devsite-footer-linkbox-link
+                    gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 5)">
+            Android Studio
+          </a>
+        </li>
+              </ul>
+    </li>
+      </ul>
+</nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility">
+    <nav class="devsite-nav devsite-footer-sites">
+    <a href="https://developers.google.com/" class="devsite-footer-sites-logo-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo" src="./AndroidX 概览  _  Android Developers_files/lockup-color.png" alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="https://developer.android.com/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Android Link">
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://developer.chrome.com/home" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Chrome Link">
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://firebase.google.com/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Firebase Link">
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://cloud.google.com/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Cloud Platform Link">
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://developers.google.com/products/" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer All products Link">
+          所有产品
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-nav">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link
+                  gc-analytics-event" href="https://policies.google.com/privacy" data-category="Site-Wide Custom Events" data-label="Footer Privacy link">
+          隐私权政策
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link
+                  gc-analytics-event" href="https://developer.android.com/license" data-category="Site-Wide Custom Events" data-label="Footer License link">
+          许可
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link
+                  gc-analytics-event" href="https://developer.android.com/distribute/marketing-tools/brand-guidelines" data-category="Site-Wide Custom Events" data-label="Footer Brand guidelines link">
+          品牌指南
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">通过电子邮件接收资讯和提示</span>
+                        <a class="devsite-footer-utility-link
+                  gc-analytics-event" href="https://developer.android.com/updates" data-category="Site-Wide Custom Events" data-label="Footer Subscribe link">
+          订阅
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select" name="language" track-name="click" track-type="languageSelector">
+                <option>Language</option>
+              <option value="id" track-metadata-original-language="zh_cn" track-metadata-selected-language="id" track-name="changed" track-type="languageSelector">
+        Bahasa Indonesia
+      </option>
+          <option value="de" track-metadata-original-language="zh_cn" track-metadata-selected-language="de" track-name="changed" track-type="languageSelector">
+        Deutsch
+      </option>
+          <option value="en" track-metadata-original-language="zh_cn" track-metadata-selected-language="en" track-name="changed" track-type="languageSelector">
+        English
+      </option>
+          <option value="es" track-metadata-original-language="zh_cn" track-metadata-selected-language="es" track-name="changed" track-type="languageSelector">
+        Español
+      </option>
+          <option value="es_419" track-metadata-original-language="zh_cn" track-metadata-selected-language="es_419" track-name="changed" track-type="languageSelector">
+        Español – América Latina
+      </option>
+          <option value="fr" track-metadata-original-language="zh_cn" track-metadata-selected-language="fr" track-name="changed" track-type="languageSelector">
+        Français
+      </option>
+          <option value="pt_br" track-metadata-original-language="zh_cn" track-metadata-selected-language="pt_br" track-name="changed" track-type="languageSelector">
+        Português – Brasil
+      </option>
+          <option value="vi" track-metadata-original-language="zh_cn" track-metadata-selected-language="vi" track-name="changed" track-type="languageSelector">
+        Tiếng Việt
+      </option>
+          <option value="tr" track-metadata-original-language="zh_cn" track-metadata-selected-language="tr" track-name="changed" track-type="languageSelector">
+        Türkçe
+      </option>
+          <option value="ru" track-metadata-original-language="zh_cn" track-metadata-selected-language="ru" track-name="changed" track-type="languageSelector">
+        Русский
+      </option>
+          <option value="th" track-metadata-original-language="zh_cn" track-metadata-selected-language="th" track-name="changed" track-type="languageSelector">
+        ภาษาไทย
+      </option>
+          <option value="zh_cn" track-metadata-original-language="zh_cn" track-metadata-selected-language="zh_cn" track-name="changed" track-type="languageSelector">
+        中文 – 简体
+      </option>
+          <option value="zh_tw" track-metadata-original-language="zh_cn" track-metadata-selected-language="zh_tw" track-name="changed" track-type="languageSelector">
+        中文 – 繁體
+      </option>
+          <option value="ja" track-metadata-original-language="zh_cn" track-metadata-selected-language="ja" track-name="changed" track-type="languageSelector">
+        日本語
+      </option>
+          <option value="ko" track-metadata-original-language="zh_cn" track-metadata-selected-language="ko" track-name="changed" track-type="languageSelector">
+        한국어
+      </option>
+        </select>
+  <div class="devsite-select"><button class="devsite-select-toggle">Language</button><ul class="devsite-select-list" scrollbars=""><li class="devsite-select-item" data-index="0">Language</li><li class="devsite-select-item" data-index="1">Bahasa Indonesia</li><li class="devsite-select-item" data-index="2">Deutsch</li><li class="devsite-select-item" data-index="3">English</li><li class="devsite-select-item" data-index="4">Español</li><li class="devsite-select-item" data-index="5">Español – América Latina</li><li class="devsite-select-item" data-index="6">Français</li><li class="devsite-select-item" data-index="7">Português – Brasil</li><li class="devsite-select-item" data-index="8">Tiếng Việt</li><li class="devsite-select-item" data-index="9">Türkçe</li><li class="devsite-select-item" data-index="10">Русский</li><li class="devsite-select-item" data-index="11">ภาษาไทย</li><li class="devsite-select-item" data-index="12">中文 – 简体</li><li class="devsite-select-item" data-index="13">中文 – 繁體</li><li class="devsite-select-item" data-index="14">日本語</li><li class="devsite-select-item" data-index="15">한국어</li></ul></div></devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </div></div>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar></devsite-snackbar>
+    <devsite-tooltip></devsite-tooltip>
+    <devsite-analytics>
+              <script async="" src="./AndroidX 概览  _  Android Developers_files/app_loader.js.下载"></script><script type="application/json" analytics="">[{"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "zh_cn", "dimension4": "Android Developers", "dimension5": "zh-cn", "dimension3": false, "dimension1": "Signed out"}, "gaid": "UA-5831155-1"}, {"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "zh_cn", "dimension4": "Android Developers", "dimension5": "zh-cn", "dimension3": false, "dimension1": "Signed out"}, "gaid": "UA-49880327-2"}]</script>
+<script type="application/json" gtm="">["GTM-KMSWPCJ"]</script>
+          </devsite-analytics>
+        <script>
+    (function(d,e,v,E,l,o,p,r,s,_,__){d['GoogleDevelopersObject']=[!0,l,o,p,r,s];
+    _=e.createElement(v);_.async=1;_.src=E;__=e.getElementsByTagName(v)[0];
+    __.parentNode.insertBefore(_,__);})(window, document, 'script',
+      'https://www.gstatic.com/devrel-devsite/va3a0eb1ff00a004a87e2f93101f27917d794beecfd23556fc6d8627bba2ff3cf/js/app_loader.js',
+      'zh_cn',
+      'https://www.gstatic.com/devrel-devsite/va3a0eb1ff00a004a87e2f93101f27917d794beecfd23556fc6d8627bba2ff3cf/android/js/devsite_app.js',
+      'https://www.gstatic.com/devrel-devsite/va3a0eb1ff00a004a87e2f93101f27917d794beecfd23556fc6d8627bba2ff3cf',
+      'https://www.gstatic.com/devrel-devsite/va3a0eb1ff00a004a87e2f93101f27917d794beecfd23556fc6d8627bba2ff3cf/android',
+      !0,
+      ['/_pwa/android/manifest.json',
+       '/_static/images/video-placeholder.svg',
+       'https://www.gstatic.com/devrel-devsite/va3a0eb1ff00a004a87e2f93101f27917d794beecfd23556fc6d8627bba2ff3cf/android/images/favicon.png','https://www.gstatic.com/devrel-devsite/va3a0eb1ff00a004a87e2f93101f27917d794beecfd23556fc6d8627bba2ff3cf/android/images/lockup.svg','https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons'],
+       'https://android-dot-devsite-v2-prod.appspot.com')
+   </script>  
+</body></html>
