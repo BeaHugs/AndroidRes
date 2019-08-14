@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorProgress">#13e518</color>
+    <color name="tangerine">#FC3A14</color>
+    <color name="red">#FC3A14</color>
+    <color name="wathet">#00CED1</color>
+    <color name="lucency">#00000000</color>
+    <color name="red2">#ff1e1e</color>
+    <color name="red3">#ff5436</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white40">#40FFFFFF</color>
+    <color name="white80">#80FFFFFF</color>
+    <color name="gray">#666666</color>
+    <color name="gray2">#CCCCCC</color>
+    <color name="gray_f7">#f7f7f7</color>
+    <color name="grayA5">#A5A5A5</color>
+    <color name="grayf3">#F3F3F3</color>
+    <color name="grayf4">#F4F4F4</color>
+    <color name="black">#000000</color>
+    <color name="gray_9">#999999</color>
+    <color name="gray_6">#666666</color>
+    <color name="gray_98">#989898</color>
+    <color name="black_3">#333333</color>
+    <color name="bottom_color">#f3f3f3</color>
+    <color name="line_color">#E5E5E5</color>
+    <color name="userNameColor">#434343 </color>
+    <color name="meg">#f6f6f6</color>
+
+    <color name="gray_f4">#F4F4F4</color>
+    <color name="meg_type_ok">#FC2B1E</color>
+    <color name="meg_type_no">#000000</color>
+
+    <color name="type_f6">#F6F6F6</color>
+    <color name="type_e8">#E8403B</color>
+
+    <color name="type_e5">#E5E5E5</color>
+
+</resources>

@@ -1,0 +1,236 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/red</item>
+        <!--取出标题栏-->
+        <item name="windowNoTitle">true</item>
+
+        <!--<item name="android:activityOpenExitAnimation">@anim/move_out_right</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/in_from_left</item>-->
+    </style>
+    <style name="AnimationTopFade">
+        <item name="android:windowEnterAnimation">@anim/dropdown_in</item>
+        <item name="android:windowExitAnimation">@anim/dropdown_out</item>
+    </style>
+    <style name="App_NoTitle" parent="AppTheme">
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">true</item>
+    </style>
+
+    <!--手机号输入框-->
+    <style name="phone_edit">
+        <item name=" android:textColorHint">#ABABAB</item>
+        <item name="android:textSize">@dimen/y30</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">11</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+
+    <!--输入金钱限制9位-->
+    <style name="borrow_price" parent="base_edit">
+        <item name="android:maxLength">9</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <!--公司名字-->
+    <style name="company_name" parent="base_edit">
+        <item name="android:maxLength">20</item>
+    </style>
+
+    
+    <style name="age_style" parent="base_edit">
+        <item name="android:maxLength">3</item>
+        <item name="android:inputType">number</item>
+    </style>
+    
+    
+
+    <!--yzm输入框-->
+    <style name="yzm_edit">
+        <item name=" android:textColorHint">#ABABAB</item>
+        <item name="android:textSize">@dimen/y30</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">4</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <!--密码输入框-->
+    <style name="pwd_edit">
+        <item name=" android:textColorHint">#ABABAB</item>
+        <item name="android:textSize">@dimen/y30</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:password">true</item>
+    </style>
+
+    <!--优化启动页白屏-->
+    <style name="SplashAppTheme" parent="AppTheme">
+        <!--<item name="android:windowBackground">@drawable/splash_icon</item>-->
+        <!--<item name="android:windowFullscreen">false</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowDisablePreview">true</item>-->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--优化启动页白屏-->
+    <style name="notDoubleTouchClick" parent="AppTheme">
+        <!-- 防止同时按下两个按钮 -->
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+    <!--价格输入框-->
+    <style name="money_edit">
+        <item name=" android:textColorHint">#ABABAB</item>
+        <item name="android:textSize">@dimen/y30</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <!--<item name="android:cursorVisible">false</item>-->
+        <item name="android:inputType">number</item>
+    </style>
+
+
+    <!--重写系统弹出Dialog -->
+    <style name="myDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:background">@drawable/search_radius</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled" tools:ignore="DuplicateDefinition">true</item>
+    </style>
+
+    <!--透明窗口 菜单-->
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+    </style>
+
+
+    <style name="loading_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:windowFrame">@null</item>
+
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/dialog_toast</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!--重写系统弹出Dialog  去除灰色背景-->
+    <style name="myDialogLoading" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!--重写系统弹出Dialog -->
+    <style name="reservation_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="dialog_qq_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/dialog_in_anim_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_anim_to_bottom</item>
+        <item name="android:windowBackground">@drawable/menu_choose_bg</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="loginactivity">
+        <item name="android:windowEnterAnimation">@anim/dialog_in_anim_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_anim_to_bottom</item>
+    </style>
+
+    <style name="base_edit">
+        <item name=" android:textColorHint">#ABABAB</item>
+        <item name="android:textSize">@dimen/y30</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <!--<item name="android:maxLength">11</item>-->
+    </style>
+    <style name="base_id" parent="base_edit">
+        <item name="android:maxLength">18</item>
+        <item name="android:digits">0123456789Xx</item>
+    </style>
+
+    <style name="validator_style"  parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+
+    </style>
+    <!--上下动画-->
+    <style name="AniDinUoutActivity" parent="@android:style/Animation.Activity">
+    </style>
+
+    <!-- ios 动画 -->
+    <style name="DialogIOSAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_ios_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_ios_out</item>
+    </style>
+
+
+
+    <style name="BaseDialogStyle" parent="Theme.AppCompat.DayNight.Dialog.Alert"><!-- @android:style/Theme.Dialog -->
+        <!-- 无边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 浮在 Activity 之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 遮盖层 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 动画效果 -->
+        <item name="android:windowEnterAnimation">@anim/dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_scale_out</item>
+        <!-- Base.Theme.AppCompat.Light.Dialog.Alert 特有的属性，用于指定默认宽度，这里需要禁用 -->
+        <item name="android:windowMinWidthMajor">0dp</item>
+        <item name="android:windowMinWidthMinor">0dp</item>
+        <!-- 解决 ActionBar 占位导致 Dialog 无法全屏显示的问题 -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- ActionMode覆盖Actionbar，不顶下来 -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+
+
+</resources>

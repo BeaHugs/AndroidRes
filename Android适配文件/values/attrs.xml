@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeDragLayout">
+        <attr name="need_offset" format="float" />
+        <attr name="ios" format="boolean" />
+        <attr name="swipe_enable" format="boolean" />
+        <attr name="swipe_direction" format="enum">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <!--等比缩放imageview-->
+    <declare-styleable name="ScaleImageView">
+        <!--缩放的类型：按宽还是高-->
+        <attr name="viewScaleType" format="enum">
+            <enum name="width" value="1" />
+            <enum name="height" value="2" />
+        </attr>
+        <!--缩放的倍数-->
+        <!--比如：宽120 高60 (按宽来缩放：比例就是 2; 按高度来缩放，比例：0.5f)-->
+        <attr name="viewScaleRadio" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="BottomTabBar">
+        <attr name="tab_bar_background" format="color" />
+        <attr name="tab_img_width" format="dimension" />
+        <attr name="tab_img_height" format="dimension" />
+        <attr name="tab_font_size" format="dimension" />
+        <attr name="tab_padding_top" format="dimension" />
+        <attr name="tab_img_font_padding" format="dimension" />
+        <attr name="tab_padding_bottom" format="dimension" />
+        <attr name="tab_isshow_divider" format="boolean" />
+        <attr name="tab_divider_height" format="dimension" />
+        <attr name="tab_divider_background" format="color" />
+        <attr name="tab_selected_color" format="color" />
+        <attr name="tab_unselected_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="VoiceRippleView">
+        <attr name="VoiceRippleView_rippleColor" format="color"/>
+        <attr name="VoiceRippleView_rippleRadius" format="integer"/>
+        <attr name="VoiceRippleView_iconSize" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="BorderCircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+
+
+
+    <attr name="WLoadingStyle" format="reference"/>
+
+    <declare-styleable name="WLoadingView">
+        <attr name="libx_loading_view_size" format="dimension"/>
+        <attr name="android:color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="WEmptyView">
+        <attr name="libx_show_loading" format="boolean"/>
+        <attr name="libx_title_text" format="string"/>
+        <attr name="libx_detail_text" format="string"/>
+        <attr name="libx_btn_text" format="string"/>
+    </declare-styleable>
+
+</resources>

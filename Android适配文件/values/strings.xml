@@ -1,0 +1,45 @@
+<resources>
+    <!--<string name="app_name">亲家</string>-->
+
+
+    <string name="qinjia_fw">亲家服务协议</string>
+
+    <string name="camera_storage">相机权限、储存权限</string>
+    <string name="storage">定位权限,储存权限</string>
+    <string name="phone">电话权限</string>
+    <string name="location">定位权限</string>
+    <string name="corporation">亲家网络技术(北京)有限公司</string>
+    <string name="presentation">亲家提供金融信息服务</string>
+    <string name="rule_text">0123456789abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ`¬!"£$%^*()~=#{}[];':,./?/*-_+&#060;&#062;&#064;&#038;</string>
+    <string name="input_code">0123456789abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="action_settings">action_settings</string>
+
+    <string name="storages">"亲家"需要访问您的储存权限,您可以在"设置">"权限管理"中配置权限"</string>
+
+    <string name="call_phone_per">"亲家"需要访问您的电话权限,您可以在"设置">"权限管理"中配置权限"</string>
+
+    <string name="camera_storage_per">"亲家"需要访问您的相机权限、存储权限,您可以在"设置">"权限管理"中配置权限"</string>
+
+    <string name="location_per">"亲家"需要访问您的定位权限,您可以在"设置">"权限管理"中配置权限"</string>
+
+    <string name="phone_state">"亲家"需要读取您的手机状态,您可以在"设置">"权限管理"中配置权限"</string>
+
+    <!-- PayActivity -->
+    <string name="pay_by_wx">客户端签名微信支付</string>
+    <string name="pay_by_wxap">服务器端签名微信支付</string>
+    <string name="check_pay">检查微信版本是否支持支付</string>
+    <string name="input_reqkey">输入reqkey</string>
+    <string name="input_package_value">输入package value</string>
+    <string name="input_sign">输入sign</string>
+    <string name="getting_access_token">正在获取access token...</string>
+    <string name="get_access_token_succ">获取access token成功</string>
+    <string name="get_access_token_fail" formatted="false">获取access token失败，原因%s</string>
+    <string name="getting_prepayid">正在获取预支付订单...</string>
+    <string name="paying">支付中</string>
+    <string name="get_prepayid_succ">获取prepayid成功</string>
+    <string name="get_prepayid_fail" formatted="false">获取prepayid失败，原因%s</string>
+
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+</resources>
